@@ -30,4 +30,4 @@ Mengganti jQuery yang saat ini digunakan untuk meload klasemen. Perlu mengutilis
 
 ## License:
 
-MIT. Sila periksa file LICENSE.md untuk informasi lebih lanjut
+MIT. Sila periksa file [LICENSE.md](LICENSE.md) untuk informasi lebih lanjut
