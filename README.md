@@ -27,3 +27,7 @@ Contoh ini menggunakan beberapa konfigurasi sebagi berikut (yang tentu saja bisa
 ## TODO:
 
 Mengganti jQuery yang saat ini digunakan untuk meload klasemen. Perlu mengutilisasi fitur stream pada RethinkDB.
+
+## License:
+
+MIT. Sila periksa file LICENSE.md untuk informasi lebih lanjut
