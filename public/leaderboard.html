@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="/public/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+
+<body>
+  <div class="full-width-bar">
+    <h1>LEADERBOARD</h1>
+  </div>
+  <div id="container">
+    <table id="klasemen">
+    </table>
+    <div id="footer" class="full-width-bar"></div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      function loadData() {
+        $(function() {
+          $('#klasemen').html('');
+          $('#klasemen').append('<tr><th>No</th><th>Name</th><th>Swing Score</th><th>Damage Score</th></tr>');
+          $.getJSON("/", function(result) {
+            var html;
+            for (var i = 0; i < result.length; i++) {
+              html += '<tr>'
+              html += '<td>' + (i + 1) + '</td>' + '<td>' + result[i].name + '</td>' + '<td>' + result[i].swing + '</td>' + '<td>' + result[i].damage + '</td>';
+              html += '</tr>';
+            }
+            $('#klasemen').append(html);
+          });
+        })
+      }
+      loadData();
+      setInterval(loadData, 30000);
+    });
+  </script>
+</body>
+
+</html>

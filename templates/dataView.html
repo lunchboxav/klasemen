@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+
+<body>
+  <h1>{{title}}</h1>
+  <table id="data-peserta">
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Alamat</th>
+      <th>Telepon</th>
+      <th>Swing</th>
+      <th>Damage</th>
+    </tr>
+    {{#each jsonData}}
+    <tr>
+      <td>{{@index}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.address}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.swing}}</td>
+      <td>{{this.damage}}</td>
+    </tr>
+    {{/each}}
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "klasemenjs",
+  "version": "1.0.0",
+  "description": "contoh membuat klasemen real time dengan Node, hapi dan RethinkDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adityo Pratomo",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^15.1.1",
+    "inert": "^4.0.2",
+    "rethinkdb": "^2.3.3",
+    "socket.io": "^1.4.8",
+    "vision": "^4.1.0"
+  }
+}

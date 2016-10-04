@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Frutiger;
+    src: url("/public/FrutigerLTStd-Roman.otf")format("opentype");
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(182, 233, 235);
+    color: #ffffff;
+    text-align: center;
+    font-family: Frutiger;
+    margin: 0;
+}
+
+.full-width-bar {
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
+}
+
+h1 {
+    background: rgb(8, 69, 154);
+    padding: 20px;
+}
+
+#container {
+    position: relative;
+    min-height: 610px;
+}
+
+#footer {
+    /*position: absolute*/
+    ;
+    bottom: 0;
+    left: 0;
+}
+
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+table#klasemen {
+    margin: auto;
+    background: #ffffff;
+    border-collapse: collapse;
+}
+
+table#data-peserta {
+    margin: auto;
+    background: #ffffff;
+    border-collapse: collapse;
+}
+
+tr {
+    color: #222222;
+}
+
+tr:first-child {
+    background: rgb(8, 69, 154);
+    color: #ffffff;
+    line-height: 40px;
+}
+
+tr:nth-child(2)>td:nth-child(1) {
+    background-image: url("/public/trophy.png");
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+td:nth-child(1) {
+    width: 70px;
+}
+
+td:nth-child(2) {
+    width: 250px;
+}
+
+td:nth-child(3), td:nth-child(4) {
+    width: 120px;
+}
+
+table#data-peserta td:nth-child(1) {
+    width: 30px;
+}
+
+table#data-peserta td:nth-child(3) {
+    width: 400px;
+}
+
+table#data-peserta td:nth-child(4) {
+    width: 200px;
+}
+
+table#data-peserta td:nth-child(5), table#data-peserta td:nth-child(6) {
+    width: 80px;
+}
+
+#footer {
+    background: rgb(97, 150, 68);
+    height: 100px;
+    margin-top: 50px;
+}
