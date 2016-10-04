@@ -23,3 +23,7 @@ Contoh ini menggunakan beberapa konfigurasi sebagi berikut (yang tentu saja bisa
 - Nama table: klasemen
 - Port server: 9386
 - Port database: default RethinkDB
+
+## TODO:
+
+Mengganti jQuery yang saat ini digunakan untuk meload klasemen. Perlu mengutilisasi fitur stream pada RethinkDB.
