@@ -19,23 +19,46 @@ body {
     margin: 0 -9999rem;
     /* add back negative margin value */
     padding: 0.25rem 9999rem;
+    /*background: rgb(8, 69, 154);*/
+    /*background: rgb(152, 211, 217); */
+    background: rgb(255, 255, 255);
 }
 
-h1 {
-    background: rgb(8, 69, 154);
-    padding: 20px;
+#main-title {
+    width: 500px;
+    margin: auto;
+}
+
+#main-title h1 {
+    color: rgb(8, 69, 154);
+}
+
+#main-title h2 {
+    color: rgb(8, 69, 154);
+    margin-top: -20px;
+}
+
+h2 {
+    color: rgb(8, 69, 154);
+}
+
+img#zurich-logo {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+img#zinc-logo {
+    float: right;
+    margin-top: -75px;
+    margin-right: 20px;
 }
 
 #container {
     position: relative;
     min-height: 610px;
-}
-
-#footer {
-    /*position: absolute*/
-    ;
-    bottom: 0;
-    left: 0;
+    margin-top: 30px;
 }
 
 td {
@@ -83,8 +106,14 @@ td:nth-child(3), td:nth-child(4) {
     width: 120px;
 }
 
+table#data-peserta td {
+    font-size: 14px;
+    text-align: left;
+}
+
 table#data-peserta td:nth-child(1) {
     width: 30px;
+    text-align: center;
 }
 
 table#data-peserta td:nth-child(3) {
@@ -103,4 +132,64 @@ table#data-peserta td:nth-child(5), table#data-peserta td:nth-child(6) {
     background: rgb(97, 150, 68);
     height: 100px;
     margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+h1#data-view-title {
+    color: rgb(8, 69, 154);
+}
+
+h1#input-title {
+    margin-top: 40px;
+    color: rgb(8, 69, 154);
+}
+
+#input-form {
+    text-align: left;
+    margin: auto;
+    width: 470px;
+}
+
+#input-form label {
+    color: rgb(8, 69, 154);
+    text-align: left;
+}
+
+input#name {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+input#swing {
+    margin-left: 18px;
+    margin-bottom: 5px
+}
+
+input#damage {
+    margin-bottom: 5px;
+}
+
+input#address {
+    width: 375px;
+    height: 50px;
+    margin-left: 10px;
+    margin-bottom: 5px
+}
+
+input#phone {
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+button#input-data-button {
+    width: 100px;
+    height: 30px;
+    background: rgb(32, 89, 120);
+    color: #fff;
+    shadow: none;
+    border: none;
+    font-size: 14px;
+    margin-left: 343px
 }

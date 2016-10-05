@@ -1,17 +1,31 @@
 <html>
 
 <head>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 
 <body>
-  <h2>Masukkan Data Pemain</h2>
-  <form method="POST" action="/postData">
-    <input type="text" name="name" id="name" value="" placeholder="nama" />
-    <input type="text" name="swing" id="swing" value="" placeholder="swing" />
-    <input type="text" name="damage" id="damage" value="" placeholder="damage" />
-    <input type="text" name="address" id="address" value="" placeholder="address" />
-    <input type="text" name="phone" id="phone" value="" placeholder="phone" />
-    <button type="submit">Input Nilai</button>
+  <h1 id="input-title">Masukkan Data Pemain</h1>
+  <div id="input-form-container">
+    <div id="input-form">
+      <form method="POST" action="/postData">
+        <label for="name">Nama</label>
+        <input type="text" name="name" id="name" value="" placeholder="nama" /><br>
+
+        <label for="swing">Swing</label>
+        <input type="text" name="swing" id="swing" value="" placeholder="swing" /><br>
+
+        <label for="damage">Damage</label>
+        <input type="text" name="damage" id="damage" value="" placeholder="damage" /><br>
+
+        <label for="address">Alamat</label>
+        <input type="text" name="address" id="address" value="" placeholder="address" /><br>
+
+        <label for="phone">Telepon</label>
+        <input type="text" name="phone" id="phone" value="" placeholder="phone" /><br>
+        <button type="submit" id="input-data-button">Input Nilai</button>
+    </div>
+  </div>
 </body>
 
 </html>
